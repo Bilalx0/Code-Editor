@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: gainsboro;
+}
+
+.header h2{
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0em;
+}
+
+.Box {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.Box1{
+    padding: 20px;
+}
+
+.Box1 {
+    width: 60%;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Box2 {
+    width: 45%;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items span:first-child {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.items svg {
+    width: 100%;
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+.textarea-input {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    
+}
+
+.textarea-output {
+    height: 500px;
+    background-color: #f9f9f9;
+}
+
+h5 {
+    margin-top: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    height: 30px;
+}
+
+/* Color the SVG icons */
+/* By claude Ai  */
+
+#Layer_1 path, #Layer_1 polygon {
+    fill: #E44D26;
+}
+
+#CSS3 path {
+    fill: #1572B6;
+}
+
+[viewBox="0 0 448 512"] path {
+    fill: #F7DF1E;
+}
+
+#output-container{
+    border-top: 1px solid gainsboro;
+    width: 100vw;
+    height: 87vh;
+}
+
+
+@media (max-width:760px) {
+    .items{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .Box{
+        flex-direction: column;
+    }
+
+    .Box1{
+        width: 100vw;
+        padding: 20px 0px;
+    }
+
+    .textarea-input{
+        width: 97%;
+    }
+}
